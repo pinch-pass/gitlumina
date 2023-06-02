@@ -129,11 +129,11 @@
                                                     {/if}
 													<li id="thumbnail_{$image.id_image}" class="swiper-slide {if $smarty.foreach.thumbnails.last}last{/if}">
                                                         {if $jqZoomEnabled && $have_image && !$content_only}
-															<a href="{$link->getImageLink($product->id, $image.id_image)}"
+															<a href="{$link->getImageLink($product->link_rewrite, $imageIds, 'large_default')|escape:'html':'UTF-8'}"
 															   data-fancybox="gallerybox" class="{if $image.id_image == $cover.id_image} shown{/if}" rel="{literal}{{/literal}gallery: 'gal1', smallimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'large_default')|escape:'html':'UTF-8'}',largeimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox_default')|escape:'html':'UTF-8'}'{literal}}{/literal}">
 																<img class="img-responsive" id="thumb_{$image.id_image}" src="{$link->getImageLink($product->link_rewrite, $imageIds, 'cart_default')|escape:'html':'UTF-8'}" alt="{$imageTitle}" height="{$cartSize.height}" width="{$cartSize.width}" itemprop="image"/></a>
                                                         {else}
-															<a href="{$link->getImageLink($product->id, $image.id_image)}"
+															<a href="{$link->getImageLink($product->link_rewrite, $imageIds, 'large_default')|escape:'html':'UTF-8'}"
 															   data-fancybox="gallerybox" class="{if $image.id_image == $cover.id_image} shown{/if}">
 																<img class="img-responsive" id="thumb_{$image.id_image}" src="{$link->getImageLink($product->link_rewrite, $imageIds, 'cart_default')|escape:'html':'UTF-8'}"
 																	 alt="{$imageTitle}" height="{$cartSize.height}" width="{$cartSize.width}" itemprop="image"/>
@@ -494,8 +494,11 @@
 						</div>
 
 						<!-- end content_prices -->
-                        {if isset($accessories) AND $accessories}
-							<div class="product_attributes clearfix form-group">
+
+						<div class="product_attributes clearfix form-group">
+
+
+                            {if isset($accessories) AND $accessories}
 								<!-- accessories -->
 								<section id="last_viewed" class="page-product-box blockproductscategory">
 									<div class="titlebordrtext1">
@@ -518,8 +521,9 @@
 										</ul>
 									</div>
 								</section>
-							</div>
-                        {/if}
+                            {/if}
+
+						</div>
 
 						<div class="product_attributes clearfix">
 
