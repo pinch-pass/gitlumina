@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>carrotquest</name>
+	<displayName><![CDATA[Carrot quest]]></displayName>
+	<version><![CDATA[1.0.1]]></version>
+	<description><![CDATA[Carrot quest - это сервис, сочетающий инструменты для автоматизации маркетинга, продаж и коммуникаций на вашем сайте. Основной целью является увеличение первых и повторных продаж.]]></description>
+	<author><![CDATA[Carrot quest]]></author>
+	<tab><![CDATA[analytics_stats]]></tab>
+	<confirmUninstall><![CDATA[Вы уверены, что хотите удалить модуль?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

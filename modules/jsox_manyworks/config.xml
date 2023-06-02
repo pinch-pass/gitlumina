@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>jsox_manyworks</name>
+	<displayName><![CDATA[Работы по фронт-енду]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Работы по фронт-енду и т.д.]]></description>
+	<author><![CDATA[prestaservice]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>

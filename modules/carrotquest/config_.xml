@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>carrotquest</name>
+	<displayName><![CDATA[Carrot quest]]></displayName>
+	<version><![CDATA[1.0.1]]></version>
+	<description><![CDATA[Carrot quest is a customer service, combining all instruments for marketing automation, sales and communications for your web app. Goal is to increase first and second sales.]]></description>
+	<author><![CDATA[Carrot quest]]></author>
+	<tab><![CDATA[analytics_stats]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

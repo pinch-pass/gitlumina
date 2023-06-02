@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>SmartHub</name>
+	<displayName><![CDATA[1C-Presta.ru]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[New Class ProductPrice (WebService) from www.1c-presta.ru
+Integration 1C and PrestaShop]]></description>
+	<author><![CDATA[www.1c-presta.ru]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>

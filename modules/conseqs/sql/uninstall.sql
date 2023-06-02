@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule_settings`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule_hook`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule_binding`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule_condition_group`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule_condition`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule_condition_argument`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_measure`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_measure_value`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule_measure`;
+DROP TABLE IF EXISTS `PREFIX_conseqs_rule_measure_queue`;

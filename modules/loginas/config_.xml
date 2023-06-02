@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>loginas</name>
+	<displayName><![CDATA[Login As Customer]]></displayName>
+	<version><![CDATA[0.0.1]]></version>
+	<description><![CDATA[this module allows you to login as a customer]]></description>
+	<author><![CDATA[datakick]]></author>
+	<tab><![CDATA[back_office_features]]></tab>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
