@@ -50,8 +50,6 @@
             <label> Выгружать только неактивные товары</label><br>
             <input type="checkbox" name="check" value="off" onclick="onlyOne(this)">
             <label> Отключить все</label><br>
-            <label>Исключенные товары</label><br>
-            <input type="text" name="excluded_products">
         </div>
     </div>
     <hr>
