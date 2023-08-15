@@ -195,7 +195,6 @@ class Jsox_xmlexport extends Module
             $includeDescription = false;
             $priceFrom = 0;
             $priceTo = 0;
-            $excluded_products = '';
             $needle = $config[$start];
 
             foreach ($needle as $key => $value) {
@@ -224,10 +223,6 @@ class Jsox_xmlexport extends Module
                     if ($name == 'includeDescription') {
                         $includeDescription = true;
                     }
-
-                    if ($name == 'excluded_products') {
-                        $excluded_products = $val;
-                    }
                 }
             }
 
@@ -250,11 +245,6 @@ class Jsox_xmlexport extends Module
                 $priceToStr = ' AND price < ' . (int) $priceTo;
             }
 
-            $excluded_products_str = '';
-            if ($excluded_products) {
-                $excluded_products_str = ' AND `id_product` NOT IN('.pSQL($excluded_products).')';
-            }
-
             // $query = '
             //     SELECT id_product 
             //     FROM `ps_product` p
@@ -265,7 +255,7 @@ class Jsox_xmlexport extends Module
                 SELECT id_product 
                 FROM `ps_product` p
                 WHERE p.id_category_default IN (' . $inCats . ')
-                AND id_manufacturer IN (4) ' . $priceFromStr .  $priceToStr . $excluded_products_str .'
+                AND id_manufacturer IN (4) ' . $priceFromStr .  $priceToStr . '
                 ';
             if ($custom != "" && $custom != 'off') {
                 switch ($custom) {
@@ -282,7 +272,7 @@ class Jsox_xmlexport extends Module
 
                 $query = '
                 SELECT id_product 
-                FROM `ps_product` WHERE ' . $sql . $excluded_products_str . ' ORDER BY id_product ASC';
+                FROM `ps_product` WHERE ' . $sql . ' ORDER BY id_product ASC';
             }
 
             $filtered = DB::getInstance()->executeS($query);
